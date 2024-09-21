@@ -22,7 +22,7 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            paradoxalarminterface/pai
+            suleimant/pai
           tags: |
             type=ref,event=branch
             type=pep440,pattern={{version}}
