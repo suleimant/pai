@@ -14,7 +14,7 @@ jobs:
     uses: ./.github/workflows/test.yml
   publish:
     name: Publish to Docker Hub
-    if: github.repository == 'ParadoxAlarmInterface/pai' && github.ref == 'refs/heads/dev'
+    if: github.repository == 'suleimant/pai' && github.ref == 'refs/heads/dev'
     uses: ./.github/workflows/publish_docker.yml
     needs: test
     secrets:
