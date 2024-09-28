@@ -57,7 +57,7 @@ class AbstractEntity:
             availability_topic=self.availability_topic,
             device=self.device,
             name=prefix + f"{self.entity_name}",
-            object_id=prefix + f"{self.property}",            
+            object_id=prefix + f"{self.key}",            
             unique_id=f"paradox_{self.device.serial_number}_{self.entity_id}",
             state_topic=self.state_topic,
         )
