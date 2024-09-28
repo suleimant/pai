@@ -9,9 +9,6 @@ on:
   workflow_dispatch:
 
 jobs:
-  test:
-    name: Test
-    uses: ./.github/workflows/test.yml
   publish:
     name: Publish to Docker Hub
     if: github.repository == 'suleimant/pai' && github.ref == 'refs/heads/dev'
